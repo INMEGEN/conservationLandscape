@@ -62,7 +62,7 @@ The output directory will contain two files:
  - kmer_frequency.txt. This is a text file with the frequency information per each reference kmer. Column 1: Start position of reference kmer. Column 2: Frequency of reference kmer. Column 3: Frequency of reference kmer, only forward strand. Column 3: Frequency of reference kmer, only reverse strand. 
  - conservationLandscape.pdf. The graphical display of the conservation landscape. The X-axis represent the start position of each reference kmer and the Y-axis represent its frequency.
 
-<img src="https://github.com/INMEGEN/conservationLandscape/blob/main/img/covland.png" width="200" height="150">
+<img src="https://github.com/INMEGEN/conservationLandscape/blob/main/img/covland.png" width="650" height="500">
 
 
 
