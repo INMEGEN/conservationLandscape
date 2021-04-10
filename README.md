@@ -1,11 +1,6 @@
 # conservationLandscape
 
-This repository host a pipeline to generate a conservation landscape based on the frequency of reference kmers across a set of target genomes
-
-This pipeline has been applied to select regions suitabe for PCR design. It has been published as part of the work:
-
-"IMPROVED PCR END-POINT BASED ON A POPULATION CONSERVATION LANDSCAPE AS AN ALTERNATIVE DIAGNOSTIC TEST FOR THE SARS-COV-2 VIRUS"
-
+This repository host a pipeline to generate a conservation landscape based on the frequency of reference kmers across a set of target genomes. This pipeline has been applied to select regions suitabe for PCR design. 
 
 ## RATIONALE
 
@@ -29,6 +24,12 @@ Before running this pipeline, you must have installed and avaiable in your $PATH
 ### HOW TO INSTALL THIS PIPELINE
 
 Clone this repository
+
+
+## HOW TO CITE THIS PIPELINE
+
+If you use this pipeline as part of your work, please cite:
+
 
 Move to the repository
 
