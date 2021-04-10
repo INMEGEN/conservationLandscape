@@ -18,11 +18,13 @@ Frequent mutations are seen as lines that drop to low values. Highly conserved r
 
 ### DEPENDENCIES
 
-Before running this pipeline, you must have installed and avaiable in your $PATH
- - jellyfish 
- - kmer_cov_plot
- - R software
- - nextflow
+Before running this pipeline, you must have installed and avaiable in your $PATH the following dependencies:
+
+ - jellyfish v2.3 [https://github.com/gmarcais/Jellyfish/tree/master/doc]
+ - nextflow [https://www.nextflow.io/]
+ - R software [https://www.r-project.org/]
+ - kmer_cov_plot. This script is part of the AMOS insfrastructure [http://amos.sourceforge.net/wiki/index.php/AMOS_Getting_Started]. The installaion of this tool can be cumbersome. We include some usefult tips on the file AMOS_instalation.md
+
 
 ### HOW TO INSTALL THIS PIPELINE
 
