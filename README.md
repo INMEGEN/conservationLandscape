@@ -24,7 +24,16 @@ Before running this pipeline, you must have installed and avaiable in your $PATH
 ### HOW TO INSTALL THIS PIPELINE
 
 1. Clone this repository
+
+````
+git clone https://github.com/INMEGEN/conservationLandscape.git
+````
+
 2. Move to the repository directory
+
+````
+cd conservationLandscape
+````
 
 3. Execute the example command line:
 
