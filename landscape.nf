@@ -47,11 +47,11 @@ process countKmers {
     file 'count_file'  into counts
  
     script:
-    def s = hash != "DEF" ? "-s $hash" : '-s 1M'
+    def s = hash != "DEF" ? "-s $hash" : '-s 100M'
     def t = hash != "DEF" ? "-t $threads" : ''
     """
-        jellyfish count --mer ${params.kmer} $s $t --both-strands --output db $fasta_file
-	jellyfish dump db_0 > count_file
+        jellyfish2.3 count --mer ${params.kmer} $s $t --canonical -o db $fasta_file
+	jellyfish2.3 dump db > count_file
     """
 }
 
@@ -71,7 +71,7 @@ process cov_plot{
 
     script:
     """
-        kmer-cov-plot $count_file < $db > kmer_frequency.txt
+        /home/lgomez/bin/kmer-cov-plot $count_file < $db > kmer_frequency.txt
     """
 
 }
