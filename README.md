@@ -6,7 +6,7 @@ This repository host a pipeline to generate a conservation landscape based on th
 
 A reference genome is splitted into subsequences of size k (kmer). The frequency of each reference kmer across a set of target genomes is obtained. The conservation landscape is the graphical representation of such frequency map. The X-axis represent the start position of each reference kmer and the Y-axis represent its frequency.
 
-Frequent mutations are seen as lines that drop to low values. Highly conserved regions are seen as steady-horizontal lines
+Frequent mutations produce sharp drops in frequency while highly conserved regions are seen as steady high frequency regions.
 
 
 ## INSTALLATION
@@ -23,21 +23,32 @@ Before running this pipeline, you must have installed and avaiable in your $PATH
 
 ### HOW TO INSTALL THIS PIPELINE
 
-Clone this repository
+1. Clone this repository
+2. Move to the repository directory
 
-
-## HOW TO CITE THIS PIPELINE
-
-If you use this pipeline as part of your work, please cite:
-
-
-Move to the repository
-
-Execute the example command line:
+3. Execute the example command line:
 
 ````
 nextflow run landscape.nf --input data/sequences.fasta --db ref/MN908947.3.coronavirus.Wuhan-1.fasta --out results/ --kmer 20 --pipeline $PATH_TO_REPO
 ````
 
 You should see a folder results that contains a counts file and a conservation landscape plot similar to this one.
+
+
+### HOW TO RUN THIS PIPELINE
+
+#### REQUIRED ARGUMENTS
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+#### OPTIONAL ARGUMENTS
+
+
+## HOW TO CITE THIS PIPELINE
+
+If you use this pipeline as part of your work, please cite:
+
 
