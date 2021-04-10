@@ -4,7 +4,7 @@ This repository host a pipeline to generate a conservation landscape based on th
 
 ## RATIONALE
 
-A reference genome is splitted into subsequences of size k (kmer). The frequency of each reference kmer across a set of target genomes is obtained. The conservation landscape is the graphical representation of such frequency map. The X-axis represent the start position of each reference kmer and the Y-axis represent its frequency.
+A reference genome is splitted into subsequences of size k (kmer). The frequency of each reference kmer across a set of target genomes is obtained. The conservation landscape is the graphical representation of such frequency map. 
 
 Frequent mutations produce sharp drops in frequency while highly conserved regions are seen as steady high frequency regions.
 
@@ -39,12 +39,31 @@ You should see a folder results that contains a counts file and a conservation l
 
 #### REQUIRED ARGUMENTS
 
-| First Header  | Second Header |
+| Argument  | Description |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| --input  | The path to the input FASTA file  |
+| --db | The path to the reference genome FASTA file  |
+| --out | The path to the output directory |
+| --db | The size of the kmer to be analyzed  |
+| --pipeline | The path to the repository directory  |
+
 
 #### OPTIONAL ARGUMENTS
+
+| Argument  | Description |
+| ------------- | ------------- |
+| --s  | The size of the hash stored in memory by Jellyfish (DEFAULT:100M) |
+| --t | Number of threads used by Jellyfish (DEFAULT:1)  |
+
+
+### OUTPUT
+
+The output directory will contain two files:
+ - kmer_frequency.txt. This is a text file with the frequency information per each reference kmer. Column 1: Start position of reference kmer. Column 2: Frequency of reference kmer. Column 3: Frequency of reference kmer, only forward strand. Column 3: Frequency of reference kmer, only reverse strand. 
+ - conservationLandscape.pdf. The graphical display of the conservation landscape. The X-axis represent the start position of each reference kmer and the Y-axis represent its frequency.
+
+![alt text](https://github.com/INMEGEN/conservationLandscape/blob/main/results/conservationLandscape.pdf?raw=true)
+
 
 
 ## HOW TO CITE THIS PIPELINE
