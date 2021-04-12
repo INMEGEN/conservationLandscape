@@ -19,7 +19,7 @@ The main page for the AMOS software infastructure is http://amos.sourceforge.net
 
 ### Shell csh
 
-Mummer is an AMOS dependency. Mummer depends on the csh shell. However csh was replaced by tcsh. So you should install tcsh shhell and do a symbolic link from tcsh to csh
+Mummer is an AMOS dependency. Mummer depends on the csh shell. However csh was replaced by tcsh. So you should install tcsh shell and do a symbolic link from tcsh to csh
 
 ````
 ln -s tsch csh
